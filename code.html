@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Muhammad Hassan Baig | Software Engineering Student &amp; Web Developer</title>
+    <meta name="description" content="Portfolio of Muhammad Hassan Baig — 3rd-semester Software Engineering student, Senior Sales Representative, and Web Developer skilled in PHP/Laravel, currently expanding into C#, ASP.NET Core, SQL Server, and Angular." />
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Muhammad Hassan Baig | Software Engineering Student &amp; Web Developer" />
+    <meta property="og:description" content="3rd-semester Software Engineering student with hands-on web development experience and professional background as a Senior Sales Representative." />
+    <meta property="og:type" content="website" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script>
+        // Progressive enhancement flag to prevent FOUC with animations
+        document.documentElement.classList.add('js-enabled');
+    </script>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-card": "rgba(15, 23, 42, 0.6)",
+                        "tertiary": "#ffb783",
+                        "surface-container-highest": "#31353e",
+                        "secondary-fixed-dim": "#4cd7f6",
+                        "on-tertiary-container": "#452000",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "surface-container": "#1c2028",
+                        "on-primary": "#1000a9",
+                        "on-background": "#dfe2ee",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#acedff",
+                        "surface-border": "#1E293B",
+                        "inverse-on-surface": "#2c3039",
+                        "surface-variant": "#31353e",
+                        "outline": "#908fa0",
+                        "on-primary-fixed": "#07006c",
+                        "background": "#0b0f17",
+                        "secondary-container": "#03b5d3",
+                        "surface-container-lowest": "#0a0e16",
+                        "text-secondary": "#94A3B8",
+                        "glow-cyan": "rgba(6, 182, 212, 0.15)",
+                        "on-primary-container": "#0d0096",
+                        "surface-tint": "#c0c1ff",
+                        "on-secondary": "#003640",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "text-primary": "#F8FAFC",
+                        "outline-variant": "#464554",
+                        "on-tertiary-fixed-variant": "#703700",
+                        "inverse-primary": "#494bd6",
+                        "surface-container-high": "#262a33",
+                        "primary": "#c0c1ff",
+                        "on-secondary-container": "#00424e",
+                        "surface": "#0f131c",
+                        "primary-container": "#8083ff",
+                        "surface-container-low": "#181c24",
+                        "secondary": "#4cd7f6",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-tertiary": "#4f2500",
+                        "on-tertiary-fixed": "#301400",
+                        "inverse-surface": "#dfe2ee",
+                        "surface-bright": "#353942",
+                        "surface-dim": "#0f131c",
+                        "tertiary-container": "#d97721",
+                        "on-secondary-fixed-variant": "#004e5c",
+                        "on-surface": "#dfe2ee",
+                        "on-secondary-fixed": "#001f26",
+                        "glow-indigo": "rgba(99, 102, 241, 0.15)",
+                        "tertiary-fixed": "#ffdcc5",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "primary-fixed": "#e1e0ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1200px",
+                        "unit": "4px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                        "label-mono": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0f17;
+            color: #F8FAFC;
+            scroll-behavior: smooth;
+        }
+        
+        /* Subtle Grid Overlay */
+        .bg-grid {
+            background-size: 50px 50px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+        }
+
+        .bento-card {
+            background: rgba(15, 23, 42, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .glass-nav {
+            background: rgba(11, 15, 23, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .status-dot {
+            box-shadow: 0 0 10px #4cd7f6;
+        }
+
+        .mesh-gradient {
+            background: radial-gradient(circle at 50% -20%, rgba(192, 193, 255, 0.12) 0%, transparent 50%);
+        }
+
+        .typing-container::after {
+            content: "|";
+            animation: blink 0.7s infinite;
+            color: #c0c1ff;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Profile Rotating Aura */
+        .profile-aura-container {
+            position: relative;
+        }
+        .profile-aura-container::before {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            background: linear-gradient(45deg, #c0c1ff, #4cd7f6, #ffb783, #c0c1ff);
+            border-radius: 50%;
+            z-index: 10;
+            filter: blur(20px);
+            opacity: 0.65;
+            animation: rotateGlow 12s linear infinite;
+        }
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Custom Selection & Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c0c1ff;
+        }
+        ::selection {
+            background: rgba(192, 193, 255, 0.2);
+            color: #F8FAFC;
+        }
+
+        /* Progressive Enhancement FOUC prevention styles */
+        .js-enabled .gsap-reveal-header {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .js-enabled .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .js-enabled .gsap-reveal-scale {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="font-body-md overflow-x-hidden relative" id="top">
+
+    <!-- Ambient Grid & Glows -->
+    <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+    <div class="absolute top-[10%] left-[-15%] w-[40vw] h-[40vw] rounded-full bg-primary/10 blur-[150px] pointer-events-none z-0"></div>
+    <div class="absolute top-[45%] right-[-15%] w-[45vw] h-[45vw] rounded-full bg-secondary/8 blur-[180px] pointer-events-none z-0"></div>
+    <div class="absolute bottom-[8%] left-[50%] -translate-x-1/2 w-[50vw] h-[50vw] bg-tertiary/6 blur-[200px] rounded-full pointer-events-none z-0"></div>
+
+    <!-- TopNavBar -->
+    <header id="main-header" class="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-container-max z-50 rounded-2xl glass-nav border border-surface-border/80 shadow-2xl transition-all duration-300 gsap-reveal-header">
+        <div class="flex justify-between items-center px-6 lg:px-10 h-16">
+            <a href="#top" class="font-headline-md text-headline-md font-bold tracking-tighter text-text-primary hover:text-primary transition-colors">
+                MHB<span class="text-primary">.</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-text-secondary hover:text-text-primary transition-colors font-body-md text-sm font-medium" href="#top">Home</a>
+                <a class="text-text-secondary hover:text-text-primary transition-colors font-body-md text-sm font-medium" href="#about">About</a>
+                <a class="text-text-secondary hover:text-text-primary transition-colors font-body-md text-sm font-medium" href="#skills">Skills</a>
+                <a class="text-text-secondary hover:text-text-primary transition-colors font-body-md text-sm font-medium" href="#experience">Experience</a>
+                <a class="text-text-secondary hover:text-text-primary transition-colors font-body-md text-sm font-medium" href="#projects">Projects</a>
+                <a class="text-text-secondary hover:text-text-primary transition-colors font-body-md text-sm font-medium" href="#contact">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <!-- Resume Download CTA (Replace resume.pdf with your actual CV file) -->
+                <a href="resume.pdf" download class="bg-primary-container text-on-primary-container px-5 py-2 rounded-full font-bold transition-all hover:bg-primary-container/90 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(128,131,255,0.2)] hover:shadow-[0_0_30px_rgba(128,131,255,0.4)] text-xs flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">download</span>
+                    Download Resume
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden text-text-primary focus:outline-none p-2">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-surface-border/60 px-6 py-6 space-y-4 bg-background/95 backdrop-blur-xl rounded-b-2xl">
+            <a class="block text-text-secondary hover:text-text-primary transition-colors font-medium text-sm" href="#top">Home</a>
+            <a class="block text-text-secondary hover:text-text-primary transition-colors font-medium text-sm" href="#about">About</a>
+            <a class="block text-text-secondary hover:text-text-primary transition-colors font-medium text-sm" href="#skills">Skills</a>
+            <a class="block text-text-secondary hover:text-text-primary transition-colors font-medium text-sm" href="#experience">Experience</a>
+            <a class="block text-text-secondary hover:text-text-primary transition-colors font-medium text-sm" href="#projects">Projects</a>
+            <a class="block text-text-secondary hover:text-text-primary transition-colors font-medium text-sm" href="#contact">Contact</a>
+            <div class="pt-2">
+                <a href="resume.pdf" download class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-5 py-2.5 rounded-full font-bold text-xs">
+                    <span class="material-symbols-outlined text-sm">download</span>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="relative pt-44 pb-28 mesh-gradient overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                    <div class="flex-1 space-y-8 z-10">
+                        <!-- Status Badge -->
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-surface-border gsap-reveal">
+                            <span class="w-2 h-2 rounded-full bg-secondary status-dot animate-pulse"></span>
+                            <span class="font-label-mono text-xs uppercase tracking-wider text-text-secondary font-medium">Software Engineering Student &amp; Web Developer</span>
+                        </div>
+                        
+                        <!-- Hero Heading -->
+                        <h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-text-primary font-extrabold leading-tight tracking-tight gsap-reveal">
+                            Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary">Muhammad Hassan Baig</span> 👋
+                        </h1>
+                        
+                        <!-- Typing effect -->
+                        <div class="text-xl sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-tertiary typing-container inline-block gsap-reveal" id="typing-effect">
+                            I am a Software Engineering Student.
+                        </div>
+                        
+                        <!-- Paragraph -->
+                        <p class="font-body-lg text-body-lg text-text-secondary max-w-xl leading-relaxed gsap-reveal">
+                            3rd-semester Software Engineering student with hands-on experience in web technologies and professional experience as a Senior Sales Representative. Currently expanding my development skills with C#, ASP.NET Core, SQL Server, and Angular.
+                        </p>
+                        
+                        <!-- Buttons -->
+                        <div class="flex flex-wrap gap-4 pt-2 gsap-reveal">
+                            <button class="bg-primary-container text-on-primary-container px-7 py-3.5 font-bold rounded-xl hover:shadow-[0_0_25px_rgba(128,131,255,0.4)] hover:scale-105 active:scale-95 transition-all duration-300 text-sm" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View Projects</button>
+                            <button class="border border-surface-border text-text-primary px-7 py-3.5 font-bold rounded-xl hover:bg-surface-container-low hover:border-primary/40 hover:scale-105 active:scale-95 transition-all duration-300 text-sm" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
+                            <!-- Resume link replacement -->
+                            <a href="resume.pdf" download class="border border-primary/30 text-primary bg-primary/5 px-7 py-3.5 font-bold rounded-xl hover:bg-primary/10 hover:border-primary hover:scale-105 active:scale-95 transition-all duration-300 text-sm flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base">download</span>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Asset: Personal Profile with Floating Tech Badges -->
+                    <div class="flex-1 relative w-full flex justify-center items-center gsap-reveal-scale">
+                        <div class="relative w-72 h-72 lg:w-[400px] lg:h-[400px]">
+                            <!-- Main Profile Image -->
+                            <div class="absolute inset-0 rounded-full border-4 border-primary/20 profile-aura-container overflow-hidden z-20 shadow-2xl">
+                                <img alt="Muhammad Hassan Baig" class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 z-20" src="Profile.jpeg"/>
+                            </div>
+                            
+                            <!-- Floating Tech Badges -->
+                            <!-- Card 1: Education -->
+                            <div id="hero-card-1" class="float-card-1 absolute -top-4 -right-4 z-30 bento-card p-3.5 rounded-2xl shadow-xl">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-secondary text-xl">school</span>
+                                    <div>
+                                        <div class="text-sm font-bold text-text-primary leading-tight">3rd Semester</div>
+                                        <div class="text-[9px] uppercase tracking-wider text-text-secondary font-medium">Software Engineering</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2: Professional Sales Role -->
+                            <div id="hero-card-2" class="float-card-2 absolute top-1/2 -left-12 z-30 bento-card p-3.5 rounded-2xl shadow-xl">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-xl">badge</span>
+                                    <div>
+                                        <div class="text-sm font-bold text-text-primary leading-tight">Senior Sales Rep</div>
+                                        <div class="text-[9px] uppercase tracking-wider text-text-secondary font-medium">Professional Role</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3: Code Snippet -->
+                            <div id="hero-card-3" class="float-card-3 absolute bottom-2 -right-4 z-30 bento-card p-4 rounded-2xl shadow-xl w-56">
+                                <div class="font-label-mono text-[10px] text-text-secondary leading-normal">
+                                    <span class="text-secondary">const</span> <span class="text-primary">developer</span> = {<br/>
+                                    &nbsp;&nbsp;status: <span class="text-tertiary">'SE Student'</span>,<br/>
+                                    &nbsp;&nbsp;webDev: [<span class="text-secondary">'PHP'</span>, <span class="text-secondary">'Laravel'</span>],<br/>
+                                    &nbsp;&nbsp;focus: [<span class="text-primary">'.NET'</span>, <span class="text-primary">'Angular'</span>]<br/>
+                                    };
+                                </div>
+                            </div>
+                            <!-- Floating Tech Icons -->
+                            <div id="hero-tech-1" class="float-tech-1 absolute top-8 -left-6 z-10 w-10 h-10 rounded-xl bg-surface-container-high border border-surface-border flex items-center justify-center shadow-lg">
+                                <span class="material-symbols-outlined text-secondary text-sm">code</span>
+                            </div>
+                            <div id="hero-tech-2" class="float-tech-2 absolute bottom-20 -left-10 z-10 w-10 h-10 rounded-xl bg-surface-container-high border border-surface-border flex items-center justify-center shadow-lg">
+                                <span class="material-symbols-outlined text-primary text-sm">terminal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-24 bg-surface-container-lowest/50 border-y border-surface-border/50" id="about">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16 max-w-2xl mx-auto">
+                    <h2 class="font-headline-md text-headline-md text-text-primary mb-3 font-bold">About Me</h2>
+                    <p class="text-text-secondary font-body-md leading-relaxed">Software Engineering student, web developer, and sales professional.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <!-- Left Column: Core Journey Card -->
+                    <div class="lg:col-span-7 bento-card p-8 sm:p-10 rounded-3xl space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-label-mono">
+                            <span class="material-symbols-outlined text-sm">person</span>
+                            Personal Background
+                        </div>
+                        <h3 class="text-2xl font-bold text-text-primary leading-snug">
+                            Combining foundational web development with enterprise <span class="text-primary">.NET &amp; Angular</span> engineering.
+                        </h3>
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            I am a 3rd-semester Software Engineering student passionate about building structured, reliable web applications. My journey in technology started with web development fundamentals — practicing and building applications using <strong>HTML, CSS, Bootstrap, JavaScript, PHP, Laravel, and MySQL</strong>.
+                        </p>
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            Parallel to my studies, I work professionally as a <strong>Senior Sales Representative</strong>. This real-world experience has sharpened my communication, negotiation, client relations, and target execution — skills that give me a clear perspective on user needs and project delivery.
+                        </p>
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            Currently, I am expanding my technical capabilities into enterprise full-stack development with <strong>C#, ASP.NET Core / .NET, SQL Server, and Angular</strong>, aiming to build robust, modern software solutions.
+                        </p>
+                    </div>
+
+                    <!-- Right Column: Quick Highlights Grid -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="bento-card p-6 rounded-2xl flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20 shrink-0">
+                                <span class="material-symbols-outlined text-primary text-xl">school</span>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-text-primary">Software Engineering Student</h4>
+                                <p class="text-text-secondary text-xs mt-1">3rd-semester undergraduate building core computer science and software design principles.</p>
+                            </div>
+                        </div>
+
+                        <div class="bento-card p-6 rounded-2xl flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center border border-secondary/20 shrink-0">
+                                <span class="material-symbols-outlined text-secondary text-xl">work</span>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-text-primary">Senior Sales Representative</h4>
+                                <p class="text-text-secondary text-xs mt-1">Professional experience in client communication, negotiation, and meeting business targets.</p>
+                            </div>
+                        </div>
+
+                        <div class="bento-card p-6 rounded-2xl flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-tertiary/10 flex items-center justify-center border border-tertiary/20 shrink-0">
+                                <span class="material-symbols-outlined text-tertiary text-xl">dataset</span>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-text-primary">Current Tech Focus</h4>
+                                <p class="text-text-secondary text-xs mt-1">Actively building full-stack projects using C#, ASP.NET Core, SQL Server, and Angular.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-24" id="skills">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16 max-w-2xl mx-auto">
+                    <h2 class="font-headline-md text-headline-md text-text-primary mb-3 font-bold">Technical Skills</h2>
+                    <p class="text-text-secondary font-body-md leading-relaxed">Categorized technical stack distinguishing established skills from active learning areas.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Frontend Card -->
+                    <div class="bento-card p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-xl">html</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-primary mb-4">Frontend</h3>
+                            
+                            <div class="space-y-2.5">
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">HTML5 &amp; CSS3</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">JavaScript</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">Bootstrap</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">Angular</span>
+                                    <span class="text-[10px] font-label-mono text-secondary bg-secondary-950/60 px-2 py-0.5 rounded border border-secondary/40">Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Card -->
+                    <div class="bento-card p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-secondary/10 flex items-center justify-center mb-6 border border-secondary/20">
+                                <span class="material-symbols-outlined text-secondary text-xl">dns</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-primary mb-4">Backend</h3>
+                            
+                            <div class="space-y-2.5">
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">PHP</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">Laravel</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">C#</span>
+                                    <span class="text-[10px] font-label-mono text-secondary bg-secondary-950/60 px-2 py-0.5 rounded border border-secondary/40">Learning</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">ASP.NET Core</span>
+                                    <span class="text-[10px] font-label-mono text-secondary bg-secondary-950/60 px-2 py-0.5 rounded border border-secondary/40">Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Card -->
+                    <div class="bento-card p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-tertiary/10 flex items-center justify-center mb-6 border border-tertiary/20">
+                                <span class="material-symbols-outlined text-tertiary text-xl">database</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-primary mb-4">Database</h3>
+                            
+                            <div class="space-y-2.5">
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">MySQL</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">SQL Server</span>
+                                    <span class="text-[10px] font-label-mono text-secondary bg-secondary-950/60 px-2 py-0.5 rounded border border-secondary/40">Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Card -->
+                    <div class="bento-card p-6 rounded-3xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+                                <span class="material-symbols-outlined text-primary text-xl">build</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-text-primary mb-4">Tools &amp; IDEs</h3>
+                            
+                            <div class="space-y-2.5">
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">Git &amp; GitHub</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">VS Code</span>
+                                    <span class="text-[10px] font-label-mono text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/40">Hands-on</span>
+                                </div>
+                                <div class="flex items-center justify-between p-2 rounded-xl bg-surface-container/60 border border-surface-border">
+                                    <span class="text-xs font-medium text-text-primary">Visual Studio</span>
+                                    <span class="text-[10px] font-label-mono text-secondary bg-secondary-950/60 px-2 py-0.5 rounded border border-secondary/40">Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Learning Journey Section -->
+        <section class="py-24 bg-surface-container-low/20 border-t border-surface-border/50 relative" id="experience">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16 max-w-2xl mx-auto">
+                    <h2 class="font-headline-md text-headline-md text-text-primary font-bold">Experience &amp; Learning Journey</h2>
+                    <p class="text-text-secondary mt-2">Professional work history alongside technical development progression.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Column 1: Professional Experience -->
+                    <div class="lg:col-span-6 bento-card p-8 rounded-3xl space-y-6">
+                        <div class="flex items-center justify-between">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-label-mono font-semibold">
+                                <span class="material-symbols-outlined text-sm">work</span>
+                                Professional Experience
+                            </div>
+                            <span class="text-xs font-label-mono text-text-secondary bg-surface-container border border-surface-border px-3 py-1 rounded-full">Present</span>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary">Senior Sales Representative</h3>
+                            <p class="text-primary font-label-mono text-xs uppercase tracking-wider mt-1 font-semibold">Professional Role</p>
+                        </div>
+
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            Serving as a Senior Sales Representative, managing key client communications, relationship building, and sales pipeline targets.
+                        </p>
+
+                        <ul class="space-y-3 text-text-secondary text-xs leading-relaxed list-disc list-outside ml-4">
+                            <li>Customer &amp; client communication across professional business channels</li>
+                            <li>Client relationship management and long-term stakeholder alignment</li>
+                            <li>Sales coordination, contract negotiation, and target execution</li>
+                            <li>Consistently meeting and exceeding organizational sales goals</li>
+                            <li>Analyzing customer requirements to recommend optimal service solutions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Technical Learning Pathway -->
+                    <div class="lg:col-span-6 bento-card p-8 rounded-3xl space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-label-mono font-semibold">
+                            <span class="material-symbols-outlined text-sm">route</span>
+                            Development Progression Pathway
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary">Technical Learning Journey</h3>
+                            <p class="text-secondary font-label-mono text-xs uppercase tracking-wider mt-1 font-semibold">Self-Directed &amp; Academic Learning</p>
+                        </div>
+
+                        <div class="space-y-3 pt-2">
+                            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container/60 border border-surface-border">
+                                <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 font-label-mono text-xs flex items-center justify-center shrink-0">1</span>
+                                <div>
+                                    <span class="text-xs font-bold text-text-primary">HTML &amp; CSS</span>
+                                    <span class="text-[11px] text-text-secondary block">Web layout structure, styling &amp; semantic tags</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container/60 border border-surface-border">
+                                <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 font-label-mono text-xs flex items-center justify-center shrink-0">2</span>
+                                <div>
+                                    <span class="text-xs font-bold text-text-primary">Bootstrap &amp; JavaScript</span>
+                                    <span class="text-[11px] text-text-secondary block">Responsive design &amp; client-side DOM interactivity</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container/60 border border-surface-border">
+                                <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 font-label-mono text-xs flex items-center justify-center shrink-0">3</span>
+                                <div>
+                                    <span class="text-xs font-bold text-text-primary">PHP &amp; MySQL</span>
+                                    <span class="text-[11px] text-text-secondary block">Server-side web scripting &amp; relational databases</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container/60 border border-surface-border">
+                                <span class="w-6 h-6 rounded-full bg-emerald-950 border border-emerald-500 text-emerald-400 font-label-mono text-xs flex items-center justify-center shrink-0">4</span>
+                                <div>
+                                    <span class="text-xs font-bold text-text-primary">Laravel Framework</span>
+                                    <span class="text-[11px] text-text-secondary block">MVC web application architecture &amp; authentication</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container/60 border border-surface-border border-secondary/30">
+                                <span class="w-6 h-6 rounded-full bg-secondary/20 border border-secondary text-secondary font-label-mono text-xs flex items-center justify-center shrink-0">5</span>
+                                <div>
+                                    <span class="text-xs font-bold text-text-primary">C#, ASP.NET Core &amp; SQL Server <span class="text-secondary text-[10px]">(Active Focus)</span></span>
+                                    <span class="text-[11px] text-text-secondary block">Enterprise web APIs &amp; relational data management</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container/60 border border-surface-border border-secondary/30">
+                                <span class="w-6 h-6 rounded-full bg-secondary/20 border border-secondary text-secondary font-label-mono text-xs flex items-center justify-center shrink-0">6</span>
+                                <div>
+                                    <span class="text-xs font-bold text-text-primary">Angular Framework <span class="text-secondary text-[10px]">(Active Focus)</span></span>
+                                    <span class="text-[11px] text-text-secondary block">Single-page applications &amp; TypeScript integration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-24" id="projects">
+            <div class="max-w-container-max mx-auto px-margin-desktop">
+                <div class="text-center mb-16 max-w-2xl mx-auto">
+                    <h2 class="font-headline-md text-headline-md text-text-primary font-bold">Projects</h2>
+                    <p class="text-text-secondary mt-2">Practical applications and web projects built during my studies and web development practice.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Project Card 1: Laravel Web App -->
+                    <div class="bento-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                        <div class="h-48 overflow-hidden relative border-b border-surface-border/60">
+                            <img src="project1.jpg" alt="Laravel &amp; MySQL Web Application" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                                <span class="material-symbols-outlined text-xl">language</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-text-primary">Laravel &amp; MySQL Web Application</h3>
+                            <p class="text-text-secondary text-xs leading-relaxed">
+                                A dynamic web application built with PHP and the Laravel framework, featuring MySQL database integration, user authentication, and standard CRUD functionality.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">PHP</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">Laravel</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">MySQL</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 flex items-center gap-3 border-t border-surface-border/40 mt-4">
+                            <!-- Replace href with actual GitHub repo URL -->
+                            <a href="#" class="flex-1 text-center bg-surface-container hover:bg-surface-container-high border border-surface-border text-text-primary py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">code</span>
+                                GitHub Repo
+                            </a>
+                            <!-- Replace href with live demo link if available -->
+                            <a href="#" class="flex-1 text-center bg-primary-container/20 text-primary border border-primary/30 hover:bg-primary-container/30 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: ASP.NET Core API -->
+                    <div class="bento-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                        <div class="h-48 overflow-hidden relative border-b border-surface-border/60">
+                            <img src="project2.jpg" alt="ASP.NET Core Web API" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="w-10 h-10 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary">
+                                <span class="material-symbols-outlined text-xl">api</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-text-primary">ASP.NET Core Web API</h3>
+                            <p class="text-text-secondary text-xs leading-relaxed">
+                                RESTful API backend service developed with C# and ASP.NET Core, utilizing Entity Framework Core and SQL Server for structured relational data operations.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">C#</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">ASP.NET Core</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">SQL Server</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 flex items-center gap-3 border-t border-surface-border/40 mt-4">
+                            <!-- Replace href with actual GitHub repo URL -->
+                            <a href="#" class="w-full text-center bg-surface-container hover:bg-surface-container-high border border-surface-border text-text-primary py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">code</span>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Angular & .NET Full-Stack Project -->
+                    <div class="bento-card rounded-3xl overflow-hidden flex flex-col justify-between group">
+                        <div class="h-48 overflow-hidden relative border-b border-surface-border/60">
+                            <img src="project3.jpg" alt="Angular &amp; .NET Full-Stack App" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <div class="w-10 h-10 rounded-xl bg-tertiary/10 border border-tertiary/20 flex items-center justify-center text-tertiary">
+                                <span class="material-symbols-outlined text-xl">dashboard</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-text-primary">Angular &amp; .NET Full-Stack App</h3>
+                            <p class="text-text-secondary text-xs leading-relaxed">
+                                Single-page frontend application built with Angular and TypeScript, designed to communicate seamlessly with an ASP.NET Core backend API.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">Angular</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">TypeScript</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">C#</span>
+                                <span class="bg-surface-container text-text-secondary px-2.5 py-1 rounded-lg text-[10px] font-bold">.NET</span>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6 pt-2 flex items-center gap-3 border-t border-surface-border/40 mt-4">
+                            <!-- Replace href with actual GitHub repo URL -->
+                            <a href="#" class="flex-1 text-center bg-surface-container hover:bg-surface-container-high border border-surface-border text-text-primary py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">code</span>
+                                GitHub Repo
+                            </a>
+                            <!-- Replace href with live demo link if available -->
+                            <a href="#" class="flex-1 text-center bg-primary-container/20 text-primary border border-primary/30 hover:bg-primary-container/30 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume CTA Banner Section -->
+        <section class="py-16 bg-surface-container-lowest/60 border-y border-surface-border/50">
+            <div class="max-w-4xl mx-auto px-margin-desktop text-center space-y-6">
+                <h3 class="text-2xl font-bold text-text-primary">Looking for my detailed Resume / CV?</h3>
+                <p class="text-text-secondary text-sm max-w-xl mx-auto">
+                    Download a copy of my current resume to review my academic software engineering progress, professional sales background, and technical projects.
+                </p>
+                <div>
+                    <!-- Replace resume.pdf with your actual resume PDF path -->
+                    <a href="resume.pdf" download class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-8 py-3.5 rounded-full font-bold text-sm hover:scale-105 transition-all shadow-[0_0_20px_rgba(128,131,255,0.3)]">
+                        <span class="material-symbols-outlined text-base">download</span>
+                        Download Resume (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Contact Section -->
+        <section class="py-24 relative overflow-hidden" id="contact">
+            <div class="max-w-4xl mx-auto px-margin-desktop">
+                <div class="bento-card p-8 sm:p-12 rounded-3xl border-primary/20 relative overflow-hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h2 class="font-headline-md text-headline-md text-text-primary leading-tight mb-4 font-bold">
+                                    Get In <span class="text-primary">Touch</span>
+                                </h2>
+                                <p class="text-text-secondary mb-8 text-sm leading-relaxed">
+                                    Whether you want to connect about web development projects, software engineering, or professional sales — feel free to reach out!
+                                </p>
+                            </div>
+
+                            <div class="space-y-4">
+                                <!-- Email (Replace hello@mhb-baig.com with your real email) -->
+                                <div class="flex items-center gap-4 group">
+                                    <div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center border border-surface-border group-hover:border-primary transition-all duration-300 shrink-0">
+                                        <span class="material-symbols-outlined text-primary text-sm">mail</span>
+                                    </div>
+                                    <span class="font-label-mono text-xs text-text-primary">hello@mhb-baig.com</span>
+                                </div>
+
+                                <!-- LinkedIn Placeholder -->
+                                <div class="flex items-center gap-4 group">
+                                    <div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center border border-surface-border group-hover:border-secondary transition-all duration-300 shrink-0">
+                                        <span class="material-symbols-outlined text-secondary text-sm">link</span>
+                                    </div>
+                                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="font-label-mono text-xs text-text-primary hover:text-secondary transition-colors">linkedin.com/in/yourusername</a>
+                                </div>
+
+                                <!-- GitHub Placeholder -->
+                                <div class="flex items-center gap-4 group">
+                                    <div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center border border-surface-border group-hover:border-primary transition-all duration-300 shrink-0">
+                                        <span class="material-symbols-outlined text-primary text-sm">code</span>
+                                    </div>
+                                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="font-label-mono text-xs text-text-primary hover:text-primary transition-colors">github.com/yourusername</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Message received.'); this.reset();">
+                            <div class="space-y-1.5">
+                                <label class="font-label-mono text-xs uppercase text-text-secondary tracking-widest">Your Name</label>
+                                <input class="w-full bg-surface-container border-0 border-b border-surface-border focus:ring-0 focus:border-primary text-text-primary p-3 transition-colors text-sm rounded-t-lg" placeholder="Muhammad Hassan" required type="text"/>
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="font-label-mono text-xs uppercase text-text-secondary tracking-widest">Email Address</label>
+                                <input class="w-full bg-surface-container border-0 border-b border-surface-border focus:ring-0 focus:border-primary text-text-primary p-3 transition-colors text-sm rounded-t-lg" placeholder="your@email.com" required type="email"/>
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="font-label-mono text-xs uppercase text-text-secondary tracking-widest">Message</label>
+                                <textarea class="w-full bg-surface-container border-0 border-b border-surface-border focus:ring-0 focus:border-primary text-text-primary p-3 transition-colors resize-none text-sm rounded-t-lg" placeholder="Write your message here..." required rows="4"></textarea>
+                            </div>
+                            <button class="w-full bg-primary-container text-on-primary-container py-3.5 font-bold rounded-xl hover:shadow-[0_0_20px_rgba(128,131,255,0.3)] hover:scale-[1.02] active:scale-95 transition-all duration-300 text-sm" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-surface-container-lowest border-t border-surface-border relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-desktop gap-6">
+            <div class="font-headline-md text-headline-md text-text-primary font-bold">
+                MHB<span class="text-primary">.</span>
+            </div>
+            <div class="flex gap-6">
+                <!-- Replace placeholders with actual social links -->
+                <a class="font-label-mono text-xs text-text-secondary hover:text-primary transition-colors" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="font-label-mono text-xs text-text-secondary hover:text-primary transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="font-label-mono text-xs text-text-secondary hover:text-primary transition-colors" href="mailto:hello@mhb-baig.com">Email</a>
+            </div>
+            <p class="font-label-mono text-xs text-text-secondary text-center md:text-right">
+                © 2026 Muhammad Hassan Baig. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- GSAP CDN and Script Execution -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <script>
+        // Typing Effect Logic
+        const roles = [
+            "Software Engineering Student.",
+            "C# & ASP.NET Core Developer.",
+            "Senior Sales Representative.",
+            "Laravel & PHP Web Developer."
+        ];
+        let currentRoleIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typing-effect');
+
+        function type() {
+            const currentRole = roles[currentRoleIndex];
+            const baseText = "I am a ";
+            
+            if (isDeleting) {
+                typingElement.textContent = baseText + currentRole.substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+            } else {
+                typingElement.textContent = baseText + currentRole.substring(0, currentCharIndex + 1);
+                currentCharIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 25 : 60;
+
+            if (!isDeleting && currentCharIndex === currentRole.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end of word
+            } else if (isDeleting && currentCharIndex === 0) {
+                isDeleting = false;
+                currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+                typeSpeed = 350; // Pause before typing next word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        // Initialize animations & interactivity on DOM load
+        window.addEventListener('DOMContentLoaded', () => {
+            // Run typing script
+            type();
+            
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileBtn && mobileMenu) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when clicking a link
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Header Scroll Shrink Effect
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('main-header');
+                if (window.scrollY > 20) {
+                    header.classList.add('py-1', 'bg-background/90', 'shadow-primary/5');
+                    header.classList.remove('border-surface-border/80');
+                    header.classList.add('border-primary/20');
+                } else {
+                    header.classList.remove('py-1', 'bg-background/90', 'shadow-primary/5');
+                    header.classList.add('border-surface-border/80');
+                    header.classList.remove('border-primary/20');
+                }
+            });
+
+            // Smooth Scroll for Anchors
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId && targetId !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(targetId);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // GSAP LANDING ENTRANCE TIMELINE
+            const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+            
+            tl.to(".gsap-reveal-header", {
+                opacity: 1,
+                y: 0,
+                duration: 0.8
+            });
+            
+            tl.to(".gsap-reveal", {
+                opacity: 1,
+                y: 0,
+                duration: 0.7,
+                stagger: 0.1
+            }, "-=0.4");
+            
+            tl.to(".gsap-reveal-scale", {
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                ease: "back.out(1.1)"
+            }, "-=0.6");
+
+            // Hero Floating UI Cards physics
+            gsap.to(".float-card-1", {
+                y: -12,
+                x: 6,
+                rotation: 1.5,
+                duration: 4.8,
+                ease: "sine.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+            gsap.to(".float-card-2", {
+                y: 14,
+                x: -5,
+                rotation: -2,
+                duration: 5.8,
+                ease: "sine.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+            gsap.to(".float-card-3", {
+                y: -10,
+                x: -8,
+                rotation: 1,
+                duration: 4.5,
+                ease: "sine.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+            gsap.to(".float-tech-1", {
+                y: 8,
+                x: 5,
+                rotation: 4,
+                duration: 4.0,
+                ease: "sine.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+            gsap.to(".float-tech-2", {
+                y: -12,
+                x: -6,
+                rotation: -4,
+                duration: 5.2,
+                ease: "sine.inOut",
+                yoyo: true,
+                repeat: -1
+            });
+
+            // Bento Cards 3D Mouse Tilt & Radial Gradient Glow Effect
+            const cards = document.querySelectorAll('.bento-card:not([class*="float-"])');
+            gsap.set(cards, { transformPerspective: 1000 });
+            
+            cards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    // Glow background
+                    card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(192, 193, 255, 0.08) 0%, rgba(15, 23, 42, 0.55) 60%)`;
+                    
+                    // 3D Tilt calculations
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = -((y - centerY) / centerY) * 4; // Max 4 degrees
+                    const rotateY = ((x - centerX) / centerX) * 4; // Max 4 degrees
+                    
+                    gsap.to(card, {
+                        rotateX: rotateX,
+                        rotateY: rotateY,
+                        scale: 1.01,
+                        borderColor: "rgba(192, 193, 255, 0.25)",
+                        boxShadow: "0 15px 35px rgba(0,0,0,0.35)",
+                        duration: 0.3,
+                        ease: "power2.out",
+                        overwrite: "auto"
+                    });
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.background = 'rgba(15, 23, 42, 0.55)';
+                    gsap.to(card, {
+                        rotateX: 0,
+                        rotateY: 0,
+                        scale: 1,
+                        borderColor: "rgba(255, 255, 255, 0.08)",
+                        boxShadow: "0 0 0px rgba(0,0,0,0)",
+                        duration: 0.4,
+                        ease: "power2.out",
+                        overwrite: "auto"
+                    });
+                });
+            });
+
+            // GSAP ScrollTrigger Reveals
+            gsap.registerPlugin(ScrollTrigger);
+
+            // About Section Reveal
+            gsap.from("#about .bento-card", {
+                opacity: 0,
+                y: 40,
+                stagger: 0.15,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#about",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Skills Section Cards Reveal
+            gsap.from("#skills .bento-card", {
+                opacity: 0,
+                y: 40,
+                stagger: 0.12,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#skills",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Experience Section Cards Reveal
+            gsap.from("#experience .bento-card", {
+                opacity: 0,
+                y: 40,
+                stagger: 0.15,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#experience",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Projects Section Cards Reveal
+            gsap.from("#projects .bento-card", {
+                opacity: 0,
+                y: 40,
+                stagger: 0.15,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#projects",
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+
+            // Contact container reveal
+            gsap.from("#contact .bento-card", {
+                opacity: 0,
+                y: 40,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#contact",
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
